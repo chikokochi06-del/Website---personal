@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sederhana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header / Profil */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .profile-header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .profile-header .title {
+            color: #3498db;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .profile-header .contact-info {
+            margin-top: 15px;
+            color: #666;
+        }
+
+        .profile-header .contact-info span {
+            margin: 0 10px;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        /* Pendidikan & Pengalaman */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        .item-subtitle {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .item-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .item-description {
+            color: #555;
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .item-description li {
+            margin-bottom: 3px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-category {
+            flex: 1 1 200px;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #e1f0fa;
+            color: #2c3e50;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .profile-header h1 {
+                font-size: 2em;
+            }
+
+            .profile-header .contact-info span {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Profil -->
+        <div class="profile-header">
+            <h1>Budi Santoso</h1>
+            <div class="title">Web Developer</div>
+            <div class="contact-info">
+                <span>📧 budi.santoso@email.com</span>
+                <span>📱 +62 812 3456 7890</span>
+                <span>📍 Jakarta, Indonesia</span>
+            </div>
+        </div>
+
+        <!-- Ringkasan -->
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>Web developer dengan pengalaman 3+ tahun dalam membangun aplikasi web responsif. Berfokus pada front-end development dengan pemahaman yang baik tentang user experience dan performa website.</p>
+        </div>
+
+        <!-- Pendidikan -->
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Univers Indonesia</span>
+                    <span class="item-date">2017 - 2021</span>
+                </div>
+                <div class="item-subtitle">S1 Teknik Informatika, IPK 3.75/4.00</div>
+                <ul class="item-description">
+                    <li>Lulus dengan predikat cumlaude</li>
+                    <li>Skripsi: Pengembangan Aplikasi Web untuk Manajemen Tugas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pengalaman Kerja -->
+        <div class="section">
+            <h2>Pengalaman Kerja</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Front-end Developer</span>
+                    <span class="item-date">2022 - Sekarang</span>
+                </div>
+                <div class="item-subtitle">PT Teknologi Maju, Jakarta</div>
+                <ul class="item-description">
+                    <li>Mengembangkan komponen reusable dengan React.js</li>
+                    <li>Berkolaborasi dengan tim desain untuk implementasi UI/UX</li>
+                    <li>Optimasi performa website sehingga meningkatkan kecepatan loading hingga 30%</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Web Developer Intern</span>
+                    <span class="item-date">2021 - 2022</span>
+                </div>
+                <div class="item-subtitle">PT Digital Kreatif, Bandung</div>
+                <ul class="item-description">
+                    <li>Membantu pengembangan website company profile untuk 5+ klien</li>
+                    <li>Melakukan testing dan debugging website</li>
+                    <li>Maintenance dan update konten website</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Keahlian</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bahasa -->
+        <div class="section">
+            <h2>Bahasa</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Indonesia (Aktif)</h3>
+                </div>
+                <div class="skill-category">
+                    <h3>Inggris (Pasif)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
